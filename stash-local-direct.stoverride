@@ -1,0 +1,28 @@
+name: Local Direct Rules
+desc: 本地直连规则，订阅更新不覆盖
+
+rules:
+  # 进程规则
+  # 注意：PROCESS-NAME 只写进程名，不写 .app 路径。
+  # 另请注意，Stash iOS/tvOS（含 Apple silicon 上运行的 iOS 版）会忽略进程规则。
+  - PROCESS-NAME,Parallels Desktop,🎯 全球直连
+
+  # 本地规则：自用直连域名
+  - DOMAIN-SUFFIX,xianyi666.top,🎯 全球直连
+
+  # 本地规则：公司域名与内网
+  - DOMAIN-SUFFIX,10jqka.com.cn,🎯 全球直连
+  - DOMAIN-SUFFIX,myhexin.com,🎯 全球直连
+  - DOMAIN-SUFFIX,51ifind.com,🎯 全球直连
+  - DOMAIN-SUFFIX,ainvest.com,🎯 全球直连
+  - DOMAIN-SUFFIX,hexin.cn,🎯 全球直连
+  - IP-CIDR,154.17.30.79,🎯 全球直连,no-resolve
+  - IP-CIDR,172.20.205.106,🎯 全球直连,no-resolve
+  - IP-CIDR,10.217.133.88,🎯 全球直连,no-resolve
+  - IP-CIDR,114.55.14.2,🎯 全球直连,no-resolve
+  - IP-CIDR,100.116.0.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,10.9.0.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,192.168.0.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,154.17.31.50,🎯 全球直连,no-resolve
+  - IP-CIDR,138.201.134.206,🎯 全球直连,no-resolve
+  - IP-CIDR,115.236.100.148,🎯 全球直连,no-resolve

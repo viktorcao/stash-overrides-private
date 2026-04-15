@@ -1,0 +1,60 @@
+name: Local Proxy Rules
+desc: 本地代理规则，订阅更新不覆盖
+
+rules:
+  # 进程规则
+  # 注意：PROCESS-NAME 只写进程名，不写 .app 路径。
+  # 另请注意，Stash iOS/tvOS（含 Apple silicon 上运行的 iOS 版）会忽略进程规则。
+  - PROCESS-NAME,Antigravity,US 美国
+
+  # 本地规则：自用代理域名
+  - IP-CIDR,123.207.54.15,US 美国,no-resolve
+  - DOMAIN-SUFFIX,idcflare.com,US 美国
+  - DOMAIN-SUFFIX,cloudflare.com,US 美国
+  - DOMAIN-SUFFIX,githubusercontent.com,US 美国
+  - DOMAIN-SUFFIX,github.com,US 美国
+  - DOMAIN,mail.xianyi666.top,US 美国
+  - DOMAIN,apimail.xianyi666.top,US 美国
+  - DOMAIN,warden.xianyi666.top,US 美国
+  - DOMAIN-SUFFIX,pterclub.net,US 美国
+  - DOMAIN,nssurge.com,US 美国
+  - DOMAIN,claude-code-hub.app,US 美国
+  - DOMAIN,relay.nf.video,US 美国
+  - DOMAIN-SUFFIX,zcode-ai.com,US 美国
+  - DOMAIN-SUFFIX,mxwljsq.xyz,US 美国
+  - DOMAIN-SUFFIX,pincc.ai,US 美国
+  - DOMAIN-SUFFIX,privnode.com,US 美国
+  - DOMAIN-SUFFIX,yes.vg,US 美国
+  - DOMAIN-SUFFIX,ikuncode.cc,US 美国
+  - DOMAIN-SUFFIX,goo.gle,US 美国
+  - DOMAIN-SUFFIX,dmit.io,US 美国
+  - DOMAIN-SUFFIX,fuclaude.com,US 美国
+  - DOMAIN-SUFFIX,ctok.ai,US 美国
+  - DOMAIN-SUFFIX,hshwk.org,US 美国
+  - DOMAIN-SUFFIX,rjj.cc,US 美国
+  - DOMAIN-SUFFIX,npmjs.org,US 美国
+  - DOMAIN-SUFFIX,youmind.com,US 美国
+  - DOMAIN-SUFFIX,ryanai.org,US 美国
+  - DOMAIN-SUFFIX,fuckoai.com,US 美国
+  - DOMAIN-SUFFIX,picx.cx,US 美国
+  - DOMAIN-SUFFIX,piggo.me,US 美国
+  - DOMAIN-SUFFIX,greasyfork.org,US 美国
+  - DOMAIN-SUFFIX,proxifier.com,US 美国
+  - DOMAIN-SUFFIX,qingwapt.org,US 美国
+  - DOMAIN-SUFFIX,qingwapt.com,US 美国
+  - DOMAIN-SUFFIX,warp.dev,US 美国
+  - DOMAIN-SUFFIX,jsdelivr.net,US 美国
+  - DOMAIN-SUFFIX,deepl.com,US 美国
+  - DOMAIN-SUFFIX,immich.app,US 美国
+  - DOMAIN-SUFFIX,zmpt.cc,US 美国
+  - DOMAIN-SUFFIX,ubits.club,US 美国
+  - DOMAIN-SUFFIX,cyanbug.net,US 美国
+  - DOMAIN-SUFFIX,crabpt.vip,US 美国
+  - DOMAIN-SUFFIX,cspt.top,US 美国
+  - DOMAIN-SUFFIX,v2ex.com,US 美国
+  - DOMAIN-SUFFIX,linux.do,US 美国
+  - DOMAIN-KEYWORD,antigravity,US 美国
+  - DOMAIN,default.exp-tas.com,US 美国
+  - DOMAIN-SUFFIX,open-vsx.org,US 美国
+  - DOMAIN-SUFFIX,google.com,US 美国
+  - DOMAIN-SUFFIX,antigravity-unleash.goog,US 美国
