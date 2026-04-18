@@ -9,6 +9,7 @@ dns:
     '+.51ifind.com': 10.9.0.1
     '+.ainvest.com': 10.9.0.1
     '+.hexin.cn': 10.9.0.1
+    'o.thsi.cn': 10.9.0.1
 
 rules:
   # 进程规则
@@ -25,6 +26,7 @@ rules:
   - DOMAIN-SUFFIX,51ifind.com,🎯 全球直连
   - DOMAIN-SUFFIX,ainvest.com,🎯 全球直连
   - DOMAIN-SUFFIX,hexin.cn,🎯 全球直连
+  - DOMAIN,o.thsi.cn,🎯 全球直连
   - IP-CIDR,154.17.30.79,🎯 全球直连,no-resolve
   - IP-CIDR,172.20.205.106,🎯 全球直连,no-resolve
   - IP-CIDR,10.217.133.88,🎯 全球直连,no-resolve
