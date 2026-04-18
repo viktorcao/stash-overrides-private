@@ -1,6 +1,15 @@
 name: Local Direct Rules
 desc: 本地直连规则，订阅更新不覆盖
 
+dns:
+  # 公司内网域名单独使用内网 DNS
+  nameserver-policy:
+    '+.10jqka.com.cn': 10.9.0.1
+    '+.myhexin.com': 10.9.0.1
+    '+.51ifind.com': 10.9.0.1
+    '+.ainvest.com': 10.9.0.1
+    '+.hexin.cn': 10.9.0.1
+
 rules:
   # 进程规则
   # 注意：PROCESS-NAME 只写进程名，不写 .app 路径。
