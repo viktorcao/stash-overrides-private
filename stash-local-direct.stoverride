@@ -1,6 +1,13 @@
 name: Local Direct Rules
 desc: 本地直连规则，订阅更新不覆盖
 
+proxy-groups:
+  # 本地补一个直连策略组，兼容规则中引用的“🎯 全球直连”
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+
 dns:
   # 公司内网域名单独使用内网 DNS
   nameserver-policy:
