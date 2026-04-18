@@ -7,6 +7,28 @@ rules:
   # 另请注意，Stash iOS/tvOS（含 Apple silicon 上运行的 iOS 版）会忽略进程规则。
   - PROCESS-NAME,Antigravity,US 美国
 
+  # 显式代理：Claude / GPT / Gemini / X / Google / GitHub / npm 官方域名
+  - DOMAIN-SUFFIX,anthropic.com,US 美国
+  - DOMAIN-SUFFIX,claude.ai,US 美国
+  - DOMAIN-SUFFIX,claudeusercontent.com,US 美国
+  - DOMAIN-SUFFIX,openai.com,US 美国
+  - DOMAIN-SUFFIX,chatgpt.com,US 美国
+  - DOMAIN-SUFFIX,oaistatic.com,US 美国
+  - DOMAIN-SUFFIX,oaiusercontent.com,US 美国
+  - DOMAIN,gemini.google.com,US 美国
+  - DOMAIN-SUFFIX,googleapis.com,US 美国
+  - DOMAIN-SUFFIX,gstatic.com,US 美国
+  - DOMAIN-SUFFIX,googleusercontent.com,US 美国
+  - DOMAIN-SUFFIX,googlesource.com,US 美国
+  - DOMAIN-SUFFIX,x.com,US 美国
+  - DOMAIN-SUFFIX,twitter.com,US 美国
+  - DOMAIN-SUFFIX,twimg.com,US 美国
+  - DOMAIN-SUFFIX,t.co,US 美国
+  - DOMAIN-SUFFIX,githubassets.com,US 美国
+  - DOMAIN-SUFFIX,github.dev,US 美国
+  - DOMAIN-SUFFIX,npmjs.com,US 美国
+  - DOMAIN-SUFFIX,nodejs.org,US 美国
+
   # 本地规则：自用代理域名
   - IP-CIDR,123.207.54.15,US 美国,no-resolve
   - DOMAIN-SUFFIX,idcflare.com,US 美国
