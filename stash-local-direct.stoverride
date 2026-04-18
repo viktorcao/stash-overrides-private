@@ -1,13 +1,6 @@
 name: Local Direct Rules
 desc: 本地直连规则，订阅更新不覆盖
 
-proxy-groups:
-  # 本地补一个直连策略组，兼容规则中引用的“🎯 全球直连”
-  - name: 🎯 全球直连
-    type: select
-    proxies:
-      - DIRECT
-
 dns:
   # 公司内网域名单独使用内网 DNS
   nameserver-policy:
@@ -22,25 +15,25 @@ rules:
   # 进程规则
   # 注意：PROCESS-NAME 只写进程名，不写 .app 路径。
   # 另请注意，Stash iOS/tvOS（含 Apple silicon 上运行的 iOS 版）会忽略进程规则。
-  - PROCESS-NAME,Parallels Desktop,🎯 全球直连
+  - PROCESS-NAME,Parallels Desktop,DIRECT
 
   # 本地规则：自用直连域名
-  - DOMAIN-SUFFIX,xianyi666.top,🎯 全球直连
+  - DOMAIN-SUFFIX,xianyi666.top,DIRECT
 
   # 本地规则：公司域名与内网
-  - DOMAIN-SUFFIX,10jqka.com.cn,🎯 全球直连
-  - DOMAIN-SUFFIX,myhexin.com,🎯 全球直连
-  - DOMAIN-SUFFIX,51ifind.com,🎯 全球直连
-  - DOMAIN-SUFFIX,ainvest.com,🎯 全球直连
-  - DOMAIN-SUFFIX,hexin.cn,🎯 全球直连
-  - DOMAIN,o.thsi.cn,🎯 全球直连
-  - IP-CIDR,154.17.30.79,🎯 全球直连,no-resolve
-  - IP-CIDR,172.20.205.106,🎯 全球直连,no-resolve
-  - IP-CIDR,10.217.133.88,🎯 全球直连,no-resolve
-  - IP-CIDR,114.55.14.2,🎯 全球直连,no-resolve
-  - IP-CIDR,100.116.0.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,10.9.0.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,192.168.0.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,154.17.31.50,🎯 全球直连,no-resolve
-  - IP-CIDR,138.201.134.206,🎯 全球直连,no-resolve
-  - IP-CIDR,115.236.100.148,🎯 全球直连,no-resolve
+  - DOMAIN-SUFFIX,10jqka.com.cn,DIRECT
+  - DOMAIN-SUFFIX,myhexin.com,DIRECT
+  - DOMAIN-SUFFIX,51ifind.com,DIRECT
+  - DOMAIN-SUFFIX,ainvest.com,DIRECT
+  - DOMAIN-SUFFIX,hexin.cn,DIRECT
+  - DOMAIN,o.thsi.cn,DIRECT
+  - IP-CIDR,154.17.30.79,DIRECT,no-resolve
+  - IP-CIDR,172.20.205.106,DIRECT,no-resolve
+  - IP-CIDR,10.217.133.88,DIRECT,no-resolve
+  - IP-CIDR,114.55.14.2,DIRECT,no-resolve
+  - IP-CIDR,100.116.0.0/24,DIRECT,no-resolve
+  - IP-CIDR,10.9.0.0/24,DIRECT,no-resolve
+  - IP-CIDR,192.168.0.0/24,DIRECT,no-resolve
+  - IP-CIDR,154.17.31.50,DIRECT,no-resolve
+  - IP-CIDR,138.201.134.206,DIRECT,no-resolve
+  - IP-CIDR,115.236.100.148,DIRECT,no-resolve
